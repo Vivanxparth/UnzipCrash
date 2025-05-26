@@ -1,0 +1,73 @@
+
+
+const fs = require('fs')
+const chalk = require('chalk')
+
+global.BOT_TOKEN = "7585821427:AAFNXiG2kcnXjI0Hga0GdyJ2l0Gzg6yXxEQ" // create bot here https://t.me/Botfather and get bot token
+global.BOT_NAME = "𝐏𝐑𝐈𝐌𝐄 𝐂𝐑𝐀𝐒𝐇 𝐕𝟏 " //your bot name
+global.OWNER_NAME = "@primeedevil @primeedevil" //your name with sign @
+global.OWNER = ["https://t.me/primeedevil"] // Make sure the username is correct so that the special owner features can be used.
+global.DEVELOPER = ["6869493294"] //developer telegram id to operate addprem delprem and listprem
+global.pp = 'https://up6.cc/2025/04/174443711898331.jpg' //your bot pp
+global.pp2 = 'https://up6.cc/2025/04/174443711898331.jpg' //your bot pp
+global.prefa = ['','!','.','#','&']
+
+global.owner = global.owner = ['2349126489858'] //owner whatsapp
+
+global.bankname = "OPAY WALLET"
+
+global.banknumber = "9126489858"
+
+global.bankowner = "Alaba adebisi adeboyejo"
+global.owner = "2349126489858" //owner number
+global.creatorName = "𝐃𝐞𝐯𝐢𝐥"
+global.ownername = "kingbadboi"
+global.ownernumber = '2349126489858'  //creator number
+global.location = "Nigeria, Ogun-state, ilese"
+global.prefa = ['','!','.','#','&']
+//================DO NOT CHANGE OR YOU'LL GET AN ERROR=============\
+global.footer = "devil" //footer section
+global.link = "https://whatsapp.com/channel/0029VbAOpCbICVfoC1HfyA2F"
+global.botName = "𝐏𝐑𝐈𝐌𝐄 𝐂𝐑𝐀𝐒𝐇 𝐕𝟏 ☠️"
+global.botname = "𝐏𝐑𝐈𝐌𝐄 𝐂𝐑𝐀𝐒𝐇 𝐕𝟏 ☠️"
+global.version = "𝙑1"
+global.author = "_devil_"
+global.onlyowner = `\`[ 👑 ] 𝐏𝐑𝐈𝐌𝐄 𝐂𝐑𝐀𝐒𝐇 𝐕𝟏  \` \n*
+
+    🚫 *Access Denied!* 🚫
+Wow! You're not my owner🗣️
+    Sorry, you don't have the necessary permissions to use this command`
+  
+global.database = `\`[ 👑 ] 𝐏𝐑𝐈𝐌𝐄 𝐂𝐑𝐀𝐒𝐇 𝐕𝟏  \` \n*
+
+    🚫 *Access Denied!* 🚫
+
+    Sorry, you don't have the necessary permissions to use this command.
+
+    *Only users in our database can access.* 😎
+*contact devil for database* 
+*Whatsapp contact* : *@2349126489858*
+*Whatsapp contact* : *@2349126489858*
+*Whatsapp Channel* : *https://whatsapp.com/channel/0029VbAOpCbICVfoC1HfyA2F*
+  *THANK FOR USING 𝐏𝐑𝐈𝐌𝐄 𝐂𝐑𝐀𝐒𝐇 𝐕𝟏  CRASHER*`
+
+
+global.mess = {
+    success: 'Done✓',
+    admin: `\`[ # ]\` This Command Can Only Be Used By Group Admins !`,
+    botAdmin: `\`[ # ]\` This Command Can Only Be Used When Bot Becomes Group Admin !`,
+    OnlyOwner: `\`[ # ]\` This Command Can Only Be Used By Vip User ! \n\nWant Vip Or Owner? Chat Developer.\nYouTube: @devi\nTelegram: @primeedevil\nWhatsApp: +2349126489858`,
+    OnlyGrup: `\`[ # ]\` This Command Can Only Be Used In Group Chat !`,
+    private: `\`[ # ]\` This Command Can Only Be Used In Private Chat !`,
+    wait: `\`[ # ]\` Wait Wait a minute`,
+    notregist: `\`[ # ]\` You are not registered in the Bot Database. Please register first.`,
+    premium: `\`[ # ]\` This Command Can Only Be Used By Owner ! \n\nWant Vip Or Owner? Chat Developer.\nYouTube: @devi\nTelegram: @primeedevil\nWhatsApp: +2349126489858`,
+}
+  
+let file = require.resolve(__filename)
+fs.watchFile(file, () => {
+    fs.unwatchFile(file)
+    console.log(chalk.redBright(`Update'${__filename}'`))
+    delete require.cache[file]
+    require(file)
+})
